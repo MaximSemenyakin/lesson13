@@ -28,14 +28,14 @@ public class Car implements Runnable{
         this.name = "Участник № " + CARS_COUNT;
     }
 
-    synchronized void checkFinish(String name) {
-        int counter = 0;
-        if (counter++ == 0) {
-            System.out.println("У нас первый финишировавший " + name);
-        } else {
-            System.out.println(name + "пришел к финишу " + counter);
-        }
-    }
+//    synchronized void checkFinish(String name) {
+//        int counter = 0;
+//        if (counter++ == 0) {
+//            System.out.println("У нас первый финишировавший " + name);
+//        } else {
+//            System.out.println(name + "пришел к финишу " + counter);
+//        }
+//    }
 
     @Override
     public void run() {
